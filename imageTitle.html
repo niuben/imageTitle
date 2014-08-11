@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="css/_imageTitle.css" rel="stylesheet" type="text/css"/>
+<body>
+	    
+	<div class="captionfull">
+		<img src="images/3.jpg"/>
+		<div class="cover boxcaption">
+			<div class="boxgrid_title">图片标题</div>
+			<div class="boxgrid_con">这里是图片文字说明部分<br />这里是图片文字说明部分</div>
+		</div>		
+    </div> 
+	
+    <div class="caption">
+		<img src="images/4.jpg"/>
+		<div class="cover boxcaption">
+			<div class="boxgrid_title">图片标题</div>
+			<div class="boxgrid_con">这里是图片文字说明部分<br />这里是图片文字说明部分</div>
+		</div>		
+	</div>
+	
+	<div class="slideright">
+		<img class="cover" src="images/5.jpg"/>
+		<div class="boxgrid_title">图片标题</div>
+		<div class="boxgrid_con">这里是图片文字说明部分<br />这里是图片文字说明部分</div>
+	</div>
+    
+    <div class="thecombo">
+		<img class="cover" src="images/6.jpg"/>
+		<div class="boxgrid_title">图片标题</div>
+		<div class="boxgrid_con">这里是图片文字说明部分<br />这里是图片文字说明部分</div>
+	</div>
+    
+    <div class="slidedown">
+		<img class="cover" src="images/1.jpg"/>
+		<div class="boxgrid_title">图片标题</div>
+		<div class="boxgrid_con">这里是图片文字说明部分<br />这里是图片文字说明部分</div>
+	</div>
+
+	<script type="text/javascript" src="script/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="script/_jquery.imageTitle.js"></script>
+	<script type="text/javascript">
+		$(".captionfull").imageTitle({
+			type:"captionfull"
+		});
+
+		$(".caption").imageTitle({
+			type:"caption"
+		});
+
+		$(".slideright").imageTitle({
+			type:"slideright"
+		});
+
+		$(".thecombo").imageTitle({
+			type:"thecombo"
+		});
+
+		$(".slidedown").imageTitle({
+			type:"slidedown"
+		});					
+	</script>			
+    
+
+</body>
+
+</html>

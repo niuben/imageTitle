@@ -1,0 +1,51 @@
+.captionfull, .caption, .slideright, .slidedown,.thecombo{ 
+	position: relative; 
+	width: 200px; 
+	height: 150px; 
+	margin: 10px; 
+	float: left; 
+	border: 2px solid #8399AF; 
+	background: #161613; 
+	overflow: hidden; 
+}
+
+.captionfull img, .caption img, .slideright img, .slidedown img,.thecombo img{ 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	border: 0;
+	width: 100%;
+}
+
+/*图片列表标题特效*/
+.boxcaption{ 
+	float: left; 
+	position: absolute; 
+	background: #000; 
+	height: 100px; 
+	width: 100%; 
+	opacity: 0.8; 
+	/* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+.captionfull .boxcaption {
+	top: 260;
+	left: 0;
+}
+.caption .boxcaption {
+	top: 220;
+	left: 0;
+}
+.boxgrid_title{
+	font-size:14px;
+	font-weight:bold;
+	padding:4px 5px 0 10px;
+	color:white;
+}
+.boxgrid_con{
+	font-size:12px;
+	padding:4px 5px 0 10px;
+	color:white;
+}
