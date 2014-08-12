@@ -16,7 +16,12 @@ dialog
 
 <pre>
 参数名称      默认值  	描述
-type		  noTitle   动画类型 toTitle: 初始不显示标题 showTitle: 初始显示标题 slideRight: 图片向左滑动后显示标题 slideTop:  图片向上滑动后显示标题 corner: 图片向左下方移动
+type		  noTitle   动画类型 
+						toTitle: 初始不显示标题 
+						showTitle: 初始显示标题 
+						slideRight: 图片向左滑动后显示标题 
+						slideTop:  图片向上滑动后显示标题 
+						corner: 图片向左下方移动
 speed        500    	动画时间单位为ms
 </pre>
 
