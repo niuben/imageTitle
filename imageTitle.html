@@ -5,62 +5,82 @@
 <link href="css/_imageTitle.css" rel="stylesheet" type="text/css"/>
 <body>
 	    
-	<div class="captionfull">
+	<div class="noTitle">
 		<img src="images/3.jpg"/>
-		<div class="cover boxcaption">
-			<div class="boxgrid_title">图片标题</div>
-			<div class="boxgrid_con">这里是图片文字说明部分<br />这里是图片文字说明部分</div>
+		<div class="caption">
+			<h2 class="title">图片标题</h2>
+			<div class="content">
+				这里是图片文字说明部分<br />
+				这里是图片文字说明部分
+			</div>
 		</div>		
     </div> 
 	
-    <div class="caption">
+    <div class="showTitle">
 		<img src="images/4.jpg"/>
-		<div class="cover boxcaption">
-			<div class="boxgrid_title">图片标题</div>
-			<div class="boxgrid_con">这里是图片文字说明部分<br />这里是图片文字说明部分</div>
+		<div class="caption">
+			<h2 class="title">图片标题</h2>
+			<div class="content">
+				这里是图片文字说明部分<br />
+				这里是图片文字说明部分
+			</div>
 		</div>		
 	</div>
 	
-	<div class="slideright">
-		<img class="cover" src="images/5.jpg"/>
-		<div class="boxgrid_title">图片标题</div>
-		<div class="boxgrid_con">这里是图片文字说明部分<br />这里是图片文字说明部分</div>
+	<div class="slideRight">
+		<img src="images/5.jpg"/>
+		<div class="caption">			
+			<div class="title">图片标题</div>
+			<div class="content">
+				这里是图片文字说明部分<br />
+				这里是图片文字说明部分
+			</div>
+		</div>
 	</div>
     
-    <div class="thecombo">
-		<img class="cover" src="images/6.jpg"/>
-		<div class="boxgrid_title">图片标题</div>
-		<div class="boxgrid_con">这里是图片文字说明部分<br />这里是图片文字说明部分</div>
+    <div class="slideTop">
+		<img src="images/1.jpg"/>
+		<div class="caption">
+			<div class="title">图片标题</div>
+			<div class="content">这里是图片文字说明部分<br />这里是图片文字说明部分</div>
+		</div>
+	</div>
+
+    <div class="corner">
+		<img src="images/6.jpg"/>
+		<div class="caption"> 
+			<div class="title">图片标题</div>
+			<div class="content">
+				这里是图片文字说明部分<br />
+				这里是图片文字说明部分
+			</div>
+		</div>
 	</div>
     
-    <div class="slidedown">
-		<img class="cover" src="images/1.jpg"/>
-		<div class="boxgrid_title">图片标题</div>
-		<div class="boxgrid_con">这里是图片文字说明部分<br />这里是图片文字说明部分</div>
-	</div>
+   
 
 	<script type="text/javascript" src="script/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="script/_jquery.imageTitle.js"></script>
 	<script type="text/javascript">
-		$(".captionfull").imageTitle({
-			type:"captionfull"
+		$(".noTitle").imageTitle({
+			type:"noTitle"
 		});
 
-		$(".caption").imageTitle({
-			type:"caption"
+		$(".showTitle").imageTitle({
+			type:"showTitle"
 		});
 
-		$(".slideright").imageTitle({
-			type:"slideright"
+		$(".slideRight").imageTitle({
+			type:"slideRight"
+		});
+		$(".slideTop").imageTitle({
+			type:"slideTop"
+		});	
+		$(".corner").imageTitle({
+			type:"corner"
 		});
 
-		$(".thecombo").imageTitle({
-			type:"thecombo"
-		});
-
-		$(".slidedown").imageTitle({
-			type:"slidedown"
-		});					
+						
 	</script>			
     
 

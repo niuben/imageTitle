@@ -1,7 +1,7 @@
-.captionfull, .caption, .slideright, .slidedown,.thecombo{ 
+.noTitle, .showTitle, .slideRight, .slideTop,.corner{ 
 	position: relative; 
-	width: 200px; 
-	height: 150px; 
+	width: 320px; 
+	height: 225px; 
 	margin: 10px; 
 	float: left; 
 	border: 2px solid #8399AF; 
@@ -9,7 +9,7 @@
 	overflow: hidden; 
 }
 
-.captionfull img, .caption img, .slideright img, .slidedown img,.thecombo img{ 
+.noTitle img, .showTitle img, .slideRight img, .slideTop img,.corner img{ 
 	position: absolute; 
 	top: 0; 
 	left: 0; 
@@ -18,34 +18,36 @@
 }
 
 /*图片列表标题特效*/
-.boxcaption{ 
-	float: left; 
-	position: absolute; 
-	background: #000; 
+.caption{
+	position: absolute;  	
 	height: 100px; 
 	width: 100%; 
+	background: #000; 
 	opacity: 0.8; 
-	/* For IE 5-7 */
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-	/* For IE 8 */
 	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
-.captionfull .boxcaption {
-	top: 260;
-	left: 0;
+.caption .title{
+	font-size: 14px;
+	font-weight: bold;
+	padding: 4px 5px 4px 10px;
+	color: white;
 }
-.caption .boxcaption {
-	top: 220;
-	left: 0;
+.caption .content{
+	font-size: 12px;
+	padding: 4px 5px 0 10px;
+	color: white;
 }
-.boxgrid_title{
-	font-size:14px;
-	font-weight:bold;
-	padding:4px 5px 0 10px;
-	color:white;
+
+.noTitle .caption, .showTitle .caption{
+	top: 260px;
+	left: 0px;
+	/*height: auto;*/
 }
-.boxgrid_con{
-	font-size:12px;
-	padding:4px 5px 0 10px;
-	color:white;
+.slideRight .caption, .slideTop .caption, .corner .caption{
+	z-index: 1;
+	height: 100%;
+}
+.slideRight img, .slideTop img, .corner img{
+	z-index: 2;
 }

@@ -16,7 +16,7 @@ dialog
 
 <pre>
 参数名称      默认值  	描述
-type			captionfull    动画类型
+type		  noTitle   动画类型 toTitle: 初始不显示标题 showTitle: 初始显示标题 slideRight: 图片向左滑动后显示标题 slideTop:  图片向上滑动后显示标题 corner: 图片向左下方移动
 speed        500    	动画时间单位为ms
 </pre>
 
@@ -26,23 +26,26 @@ speed        500    	动画时间单位为ms
 ---------
  **Html**
  <pre>
-  &lt;div class="captionfull"&gt;
+  &lt;div class="noTitle"&gt;
 	&lt;img src="images/3.jpg"/&gt;
-	&lt;div class="cover boxcaption"&gt;
-		&lt;div class="boxgrid_title"&gt;图片标题&lt;/div&gt;
-		&lt;div class="boxgrid_con"&gt;这里是图片文字说明部分&lt;br /&gt;这里是图片文字说明部分&lt;/div&gt;
+	&lt;div class="caption"&gt;
+		&lt;h2 class="title"&gt;图片标题&lt;/h2&gt;
+		&lt;div class="content"&gt;
+			这里是图片文字说明部分&lt;br /&gt;
+			这里是图片文字说明部分
+		&lt;/div&gt;
 	&lt;/div&gt;		
-&lt;/div&gt; 
-	</pre>
+&lt;/div&gt;</pre>
 
 
 **Javascript**
 <pre>
-	$(".captionfull").imageTitle({
-		type:"captionfull"
+	$(".noTitle").imageTitle({
+		type:"noTitle"
 	}); 
 </pre>
 
 版本历史
 --------
-v 0.0.1     beta    2014-8-11
+v 0.0.1   2014-8-11 创建
+v 0.0.2   2014-8-13 梳理组件样式，增加对图片高度和宽度的自动判断
